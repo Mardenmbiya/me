@@ -392,7 +392,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" onsubmit="sendEmail(); reset(); false;">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Nom Complet</label>
@@ -460,17 +460,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
-      Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "mardenmbiya@gmail.com",
-    Password : "985BB8B0CBE02B9DA43F090BD7B62DA41BE6",
-    To : 'mardenmbiya@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+     
 
   </script>
 
